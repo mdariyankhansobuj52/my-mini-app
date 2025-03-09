@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Mini App</title>
+    <script src='//niphaumeenses.net/vignette.min.js' data-zone='[2821162]'></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #1a1a1a;
+            color: #ffd700;
+            padding: 20px;
+        }
+        .reward-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #ffd700;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Earn Rewards</h1>
+    <button class="reward-button" onclick="showRewardedAd()">Watch Ad</button>
+
+    <script>
+        function showRewardedAd() {
+            if (typeof show_9025714 === 'function') {
+                show_9025714().then(() => {
+                    alert('You earned rewards!');
+                }).catch(() => {
+                    alert('Ad failed to load.');
+                });
+            } else {
+                alert('Ads not available.');
+            }
+        }
+    </script>
+</body>
+</html>
 
